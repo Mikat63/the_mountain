@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+h1,h2,h3 {
+    font-family: 'roboto', sans-serif;
+}
+
+p {
+    font-family: "rokkitt", sans-serif;
+}
+

@@ -47,7 +47,8 @@ Vos références sont les fichiers maquette*.jpg
 * [Typicons](https://www.s-ings.com/typicons/)
 
 ### 🖋️ Polices d'écritures :
-* Rokkit pour les titrages : https://fonts.google.com/selection?query=rokkit&selection.family=Rokkitt
+* Rokkit pour les titrages : https://froboto font
+onts.google.com/selection?query=rokkit&selection.family=Rokkitt
 * Roboto pour les paragraphes : https://fonts.google.com/selection?query=robot&selection.family=Roboto
 
 ## 🎁 Bonus
