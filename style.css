@@ -10,6 +10,7 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-teal-600: oklch(60% 0.118 184.704);
     --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -241,6 +242,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -259,6 +263,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -275,6 +282,9 @@
   }
   .bg-blue-300 {
     background-color: var(--color-blue-300);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -312,6 +322,12 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -335,6 +351,12 @@
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
