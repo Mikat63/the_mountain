@@ -44,7 +44,7 @@ Vos références sont les fichiers maquette*.jpg
 ➡️ **Pour afficher les icônes qui ne sont pas présentent dans les images, vous utiliserez Font Awesome, Typicons ou Flaticons :**
 * [Fontawesome](https://fontawesome.com/)
 * [Flaticon](https://www.flaticon.com/fr/)
-* [Typicons](https://www.s-ings.com/typicons/)
+* [Typicons](https://www.s-ings.com/typicons/) 
 
 ### 🖋️ Polices d'écritures :
 * Rokkit pour les titrages : https://froboto font
