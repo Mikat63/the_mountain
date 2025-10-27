@@ -423,6 +423,9 @@
   .text-center {
     text-align: center;
   }
+  .text-justify {
+    text-align: justify;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -651,6 +654,46 @@
   .sm\:text-\[26\] {
     @media (width >= 40rem) {
       color: 26;
+    }
+  }
+  .md\:w-\[50\%\] {
+    @media (width >= 48rem) {
+      width: 50%;
+    }
+  }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
+    }
+  }
+  .md\:w-\[71\%\] {
+    @media (width >= 48rem) {
+      width: 71%;
+    }
+  }
+  .md\:w-\[95\%\] {
+    @media (width >= 48rem) {
+      width: 95%;
+    }
+  }
+  .md\:w-\[100\%\] {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
+  .md\:w-\[to-95\%\] {
+    @media (width >= 48rem) {
+      width: to-95%;
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
     }
   }
 }
