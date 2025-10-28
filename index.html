@@ -38,19 +38,23 @@
       <section
         class="flex flex-col items-center justify-center bg-[url('images/bg_header.jpg')] bg-cover bg-center h-[100vh]"
       >
-        <div class="flex flex-col items-center pt-20 pb-8 text-justify w-full">
-          <div class="flex flex-col items-center text-center text-[#f5f5f5]">
-            <p class="text-3xl sm:text-5xl lg:6xl">
+        <div class="flex flex-col items-center pt-20 pb-8 w-full">
+          <div
+            class="flex flex-col items-center text-3xl text-center text-[#f5f5f5] sm:text-5xl lg:6xl xl:text-7xl"
+          >
+            <p>
               In the hail of <br />
               the
             </p>
-            <h1 class="text-5xl sm:text-6xl lg:7xl">Mountain king</h1>
+            <h1 class="text-5xl sm:text-6xl lg:7xl xl:text-8xl">
+              Mountain king
+            </h1>
           </div>
 
           <div
             class="flex flex-col items-center text-center w-2/3 pt-6 pb-6 text-[#f5f5f5]"
           >
-            <p class="text-2xl sm:text-[28px] lg:text-[28px]">
+            <p class="text-2xl sm:text-[28px] lg:text-3xl">
               This is a simple hero unit, a simple jumbotron-style component for
               calling extra attention to feature content or informations
             </p>
@@ -60,12 +64,12 @@
             class="flex flex-col items-center gap-1 text-[#f5f5f5] sm:flex-row sm:gap-3"
           >
             <button
-              class="bg-teal-600 text-[16px] rounded-xs px-3 py-2 sm:text-[20px] sm:px-5 sm:py-3"
+              class="bg-teal-600 text-[16px] rounded-sm px-3 py-2 sm:text-[20px] sm:px-4 sm:py-3"
             >
               Learn more
             </button>
             <button
-              class="bg-red-500 text-[16px] rounded-xs px-3 py-2 sm:text-[20px] sm:px-5 sm:py-3"
+              class="bg-red-500 text-[16px] rounded-sm px-3 py-2 sm:text-[20px] sm:px-4 sm:py-3"
             >
               Download
             </button>
@@ -76,7 +80,7 @@
       <!-- Second section  -->
       <section class="flex flex-col items-center w-fullbg-[#f5f5f5]">
         <div
-          class="flex flex-col w-[90%] py-12 gap-2 text-[20px] text-justify sm:w-[80%] md:w-[60%] sm:gap-4 sm:text-2xl lg:w-[50%] lg:text-3xl lg:gap-6"
+          class="flex flex-col w-[90%] py-12 gap-2 text-[20px] sm:w-[80%] md:w-[60%] sm:gap-4 sm:text-2xl lg:w-[50%] lg:text-3xl lg:gap-6 xl:flex-row xl:w-[90%]"
         >
           <div class="flex flex-col items-center text-center">
             <img
@@ -94,7 +98,7 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center text-center lg:text-4xl">
+          <div class="flex flex-col items-center text-center">
             <img
               class="pb-4"
               src="images/camera_icon.png"
@@ -135,7 +139,7 @@
         class="flex flex-col items-center bg-[url('images/bg_nuage.jpg')] bg-cover bg-center w-full"
       >
         <div
-          class="flex flex-col bg-blue-300/80 w-[90%] pt-12 pb-12 gap-8 text-[#f5f5f5] text-justify font-semibold sm:w-[80%] md:w-[60%]"
+          class="flex flex-col bg-blue-300/80 w-[90%] pt-12 pb-12 gap-8 text-[20px] text-[#f5f5f5] font-semibold sm:w-[80%] sm:text-2xl md:w-[60%] lg:text-3xl"
         >
           <div class="flex flex-col px-3 gap-5 sm:gap-4">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl">
@@ -144,7 +148,7 @@
             <h3 class="text-2xl sm:text-3xl lg:text-4xl">
               Pellentesque Cursus Amet Parturient Etiam
             </h3>
-            <p class="text-[20px] sm:text-2xl lg:text-3xl">
+            <p>
               Cras justo odio, Dapibus ac facilisis in, egestas eget quam. Donec
               id elit non mi porta gravida at eget metus. Nullam id dolor id
               nibh ultricies vehicula ut id elit.
@@ -172,16 +176,16 @@
       <!-- fourth section : >Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
       <section class="flex flex-col items-center w-full bg-[#f5f5f5]">
         <div
-          class="flex flex-col w-[90%] py-12 text-justify sm:w-[80%] md:w-[70%] lg:w-[60%]"
+          class="flex flex-col text-[20px] w-[90%] py-12 sm:w-[80%] sm:text-2xl md:w-[70%] lg:w-[60%] lg:flex-row xl:items-center xl:justify-center xl:gap-4 xl:w-full"
         >
-          <div class="flex flex-col">
-            <h2 class="pb-10 text-3xl sm:text-4xl lg:text-5xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h2>
-          </div>
+          <div class="xl:flex xl:flex-col xl:w-[40%]">
+            <div>
+              <h2 class="pb-10 text-3xl sm:text-4xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h2>
+            </div>
 
-          <div class="flex flex-col gap-3 text-[20px] sm:text-2xl lg:text-3xl">
-            <div class="flex flex-col gap-2 sm:gap-3">
+            <div class="flex flex-col gap-3 sm:gap-3">
               <p>
                 Duis Mollis, est non commodo luctus, nisi erat porttitor ligula,
                 eget lacinia odio sem nec elit. Maecenas ced diam eget risus
@@ -199,10 +203,8 @@
                 facilisis in, egestas eget quam. Nulla vitae elit libero, a
                 pharetra augue.
               </p>
-            </div>
-            <div>
               <button
-                class="flex flex-row items-center px-3 py-2 text-[#f5f5f5] rounded-xs bg-red-500 text-[16px] sm:px-5 sm:py-3 sm:text-[20px]"
+                class="flex flex-row items-center w-fit px-3 py-2 text-[#f5f5f5] rounded-sm bg-red-500 text-[16px] sm:px-5 sm:py-3 sm:text-[20px]"
               >
                 Take a look
                 <img
@@ -212,9 +214,10 @@
                 />
               </button>
             </div>
-            <div>
-              <img src="images/1200.jpeg" alt="A women on a bike" />
-            </div>
+          </div>
+
+          <div class="xl:w-[40%]">
+            <img src="images/1200.jpeg" alt="A woman on a bike" />
           </div>
         </div>
       </section>
@@ -227,7 +230,7 @@
           class="flex flex-col w-[90%] bg-blue-300/80 py-12 gap-8 text-[#f5f5f5] font-semibold sm:w-[80%] md:w-[60%]"
         >
           <div
-            class="flex flex-col px-3 text-[20px] text-justify gap-5 sm:text-2xl lg:text-3xl"
+            class="flex flex-col px-3 text-[20px] gap-5 sm:text-2xl lg:text-3xl"
           >
             <p>
               Donec sed odio dui. Integer posuere erat a ante venenatis dapibus
@@ -294,12 +297,12 @@
       <section
         class="flex flex-col items-center w-full bg-[url('images/bg_newsletter.jpg')]"
       >
-        <div class="flex flex-col items-center bg-black/70 text-justify">
+        <div class="flex flex-col items-center bg-black/70">
           <div
             class="flex flex-col w-[80%] py-12 gap-5 text-[#f5f5f5] text-[20px] sm:text-2xl md:w-[50%] lg:w-[40%] lg:text-3xl"
           >
             <div class="flex flex-col px-3">
-              <h2 class="text-3xl sm:text-4xl lhg:text-5xl">
+              <h2 class="text-3xl sm:text-4xl">
                 Maecenas sed diam eget risus varius blandit sit amet non magna.
               </h2>
             </div>
@@ -328,7 +331,7 @@
 
             <div>
               <button
-                class="bg-red-500 text-[16px] text-[#f5f5f5] px-3 py-2 rounded-xs sm:text-[20px] sm:px-6 sm:py-4"
+                class="bg-red-500 text-[16px] text-[#f5f5f5] px-3 py-2 rounded-sm sm:text-[20px] sm:px-6 sm:py-4"
               >
                 Submit Newsletter
               </button>
@@ -340,12 +343,12 @@
 
     <!-- footer section  -->
     <footer
-      class="flex flex-col items-center w-full bg-[#263238] text-[#f5f5f5] text-justify"
+      class="flex flex-col items-center w-full bg-[#263238] text-[#f5f5f5]"
     >
       <div class="flex flex-col py-7 w-[95%]">
         <div class="flex flex-col pb-8 gap-5">
           <h2 class="text-4xl lg:text-5xl">Your Logo</h2>
-          <p class="text-[16px] sm:text-[20px] lg:text-2xl">
+          <p class="text-[20px] sm:text-2xl lg:text-3xl">
             © 2016 Your Company Designed and Developped by
             <span class="text-cyan-400">The Maitre jet d'ail</span>
           </p>
