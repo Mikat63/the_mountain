@@ -36,7 +36,7 @@
     <main>
       <!-- first section : Baneer Hero-->
       <section
-        class="flex flex-colenter h-[100vh items-center justify-center bg-[url('images/bg_header.jpg')] bg-cover bg-c]"
+        class="flex flex-col h-[100vh items-center justify-center bg-[url('images/bg_header.jpg')] bg-cover"
       >
         <div class="flex flex-col items-center pt-20 pb-8 w-full">
           <div
@@ -264,51 +264,94 @@
         </div>
       </section>
 
-      <!-- sixth section : pictures gallery -->
+      <!-- sixth section gallery pics -->
       <section class="flex flex-col items-center bg-gray-300">
-        <div class="flex flex-col items-center py-12">
+        <div class="flex flex-col items-center w-[90%] py-12">
           <div
-            class="flex flex-col items-center w-[90%] gap-4 md:flex-row md:flex-wrap md:items-start lg:justify-center"
+            class="grid gap-3 grid-cols-1 justify-center md:grid-cols-3 lg:grid-cols-[60%_30%]"
           >
- 
-          <div class="md:flex md:flex-row md:flex-wrap">
-            <div>
-              <img src="images/300.jpeg" alt="Picture with a music workbench" />
-            </div>
-            <div>
-              <img src="images/776.jpeg" alt="Picture with a music workbench" />
-            </div>
-            <div>
-              <img src="images/800.jpeg" alt="Picture with a music workbench" />
-            </div>
-          </div>
+            <!-- Column 1 -->
+            <div class="grid lg:col-start-1 gap-3">
+              <!-- Top image -->
+              <div class="lg:row-start-1">
+                <img
+                  src="images/300.jpeg"
+                  alt="Music workbench"
+                  class="w-full h-full"
+                />
+              </div>
 
-          <div class="gap-4 flex flex-col">
-            <div>
-              <img
-                src="images/400.jpeg"
-                alt="Picture with a music workbench"
-                class="md:w-[30%]"
-              />
-            </div>
-            <div>
-              <img
-                src="images/2476.jpeg"
-                alt="Picture with a music workbench"
-                class="md:w-[30%]"
-              />
-            </div>
-            <div>
-              <img
-                src="images/439.jpeg"
-                alt="Picture with a music workbench"
-                class="md:w-[30%]"
-              />
-            </div>
-          </div>
+              <div class="md:hidden">
+                <img src="images/776.jpeg" alt="Volcano" class="w-full" />
+              </div>
 
-          <div>
-            <img src="images/140.jpeg" alt="Picture with a music workbench" />
+              <!-- Grid of 3 images -->
+              <div class="grid lg:grid-cols-2 lg:row-start-2 gap-3">
+                <div class="md:hidden lg:col-start-1 lg:row-span-2 lg:block">
+                  <img
+                    src="images/800.jpeg"
+                    alt="Golden Gate Bridge"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="lg:col-start-2">
+                  <img
+                    src="images/400.jpeg"
+                    alt="Person with the horizon in the night"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="lg:col-start-2">
+                  <img
+                    src="images/2476.jpeg"
+                    alt="Woman with camera"
+                    class="h-full"
+                  />
+                </div>
+              </div>
+
+              <!-- Bottom image -->
+              <div class="hidden md:block lg:row-start-3">
+                <img
+                  src="images/140.jpeg"
+                  alt="Motel sign"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="grid lg:col-start-2 gap-3">
+              <div class="hidden md:block lg:row-start-1">
+                <img src="images/776.jpeg" alt="Volcano" class="w-full" />
+              </div>
+              <div class="md:hidden lg:row-start-2 lg:block">
+                <img
+                  src="images/439.jpeg"
+                  alt="Plane crash"
+                  class="w-full h-full"
+                />
+              </div>
+              <div>
+                <div class="md:hidden">
+                  <img src="images/140.jpeg" alt="Motel sign" class="w-full" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3 md size -->
+            <div class="hidden md:grid gap-3 lg:hidden">
+              <div>
+                <img
+                  src="images/800.jpeg"
+                  alt="Golden Gate Bridge"
+                  class="w-full"
+                />
+              </div>
+              <div class="lg:row-start-2">
+                <img src="images/439.jpeg" alt="Plane crash w-full" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -384,7 +427,7 @@
                   />
                   <button
                     type="submit"
-                    class="w-fit px-3 py-2 text-[#f5f5f5] rounded-sm bg-red-500 hover:bg-red-700 focus:bg-red-700 text-[16px] sm:px-5 sm:py-3 sm:text-[20px]"
+                    class="cursor-pointer w-fit px-3 py-2 text-[#f5f5f5] rounded-sm bg-red-500 hover:bg-red-700 focus:bg-red-700 text-[16px] sm:px-5 sm:py-3 sm:text-[20px]"
                   >
                     Submit Newsletter
                   </button>
@@ -410,7 +453,7 @@
             <span class="text-cyan-400">The Maitre jet d'ail</span>
           </p>
         </div>
-        <div class="flex flex-row justify-end gap-2 pt-8 pr-3">
+        <div class="flex flex-row justify-end gap-2 pt-8 pr-3 cursor-pointer">
           <i
             class="fa-brands fa-facebook fa-lg text-cyan-400 hover:scale-200"
           ></i>
