@@ -23,20 +23,22 @@
       <div class="flex flex-row items-center">
         <img
           class="w-40 h-auto lg:w-48 lg:h-auto 2xl:w-52 2xl:h-auto"
-          src="images/your_logo.png"
+          src="images/your_logo.svg"
           alt="Navigation menu icon"
         />
         <p class="text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl">logo</p>
       </div>
       <div class="w-7 lg:w-10 2xl:w-12">
-        <img src="images/menu_icon.png" alt="Menu icon" />
+        <a href="#" class="cursor-pointer">
+          <img src="images/menu_icon.svg" alt="Menu icon" />
+        </a>
       </div>
     </header>
 
     <main>
       <!-- first section : Baneer Hero-->
       <section
-        class="flex flex-col h-[100vh items-center justify-center bg-[url('images/bg_header.jpg')] bg-cover"
+        class="flex flex-col h-[100vh] items-center justify-center bg-[url('images/bg_header_1440.webp')] md:bg-[url('images/bg_header.webp')] bg-cover"
       >
         <div class="flex flex-col items-center pt-20 pb-8 w-full">
           <div
@@ -87,7 +89,7 @@
           <div class="flex flex-col items-center text-center">
             <img
               class="pb-4"
-              src="images/pen_icon.png"
+              src="images/pen_icon.svg"
               alt="Consectetur Risus icon"
             />
             <h3 class="pb-4 text-2xl sm:text-3xl lg:text-4xl">
@@ -103,7 +105,7 @@
           <div class="flex flex-col items-center text-center">
             <img
               class="pb-4"
-              src="images/camera_icon.png"
+              src="images/camera_icon.svg"
               alt="ultricies Anenean icon"
             />
 
@@ -120,7 +122,7 @@
           <div class="flex flex-col items-center text-center">
             <img
               class="pb-4"
-              src="images/signet_icon.png"
+              src="images/signet_icon.svg"
               alt="cras Sollicitudin icon"
             />
 
@@ -138,7 +140,7 @@
 
       <!-- third section : Ligulla Mattis Omare Ultricies -->
       <section
-        class="flex flex-col items-center bg-[url('images/bg_nuage.jpg')] bg-cover bg-center w-full"
+        class="flex flex-col items-center bg-[url('images/bg_nuage_1440')] md:bg-[url('images/bg_nuage.webp')] bg-cover bg-center w-full"
       >
         <div class="flex flex-col items-center 2xl:w-[80%] 2xl:items-end">
           <div
@@ -216,7 +218,7 @@
                 Take a look
                 <img
                   class="w-8 h-auto sm:w-9 sm:h-auto"
-                  src="images/ArrowInCircleIcon.png"
+                  src="images/ArrowInCircleIcon.svg"
                   alt=""
                 />
               </a>
@@ -224,7 +226,11 @@
           </div>
 
           <div class="xl:w-[40%]">
-            <img src="images/1200.jpeg" alt="A woman on a bike" />
+            <img
+              src="images/1200.webp"
+              alt="A woman on a bike"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -275,37 +281,48 @@
               <!-- Top image -->
               <div class="lg:row-start-1">
                 <img
-                  src="images/300.jpeg"
+                  src="images/300.webp"
                   alt="Music workbench"
                   class="w-full h-full"
+                  loading="lazy"
                 />
               </div>
 
               <div class="md:hidden">
-                <img src="images/776.jpeg" alt="Volcano" class="w-full" />
+                <img
+                  src="images/776.webp"
+                  alt="Volcano"
+                  class="w-full"
+                  loading="lazy"
+                />
               </div>
 
               <!-- Grid of 3 images -->
               <div class="grid lg:grid-cols-2 lg:row-start-2 gap-3">
                 <div class="md:hidden lg:col-start-1 lg:row-span-2 lg:block">
                   <img
-                    src="images/800.jpeg"
+                    src="images/800.webp"
                     alt="Golden Gate Bridge"
                     class="w-full h-full"
+                    loading="lazy"
                   />
                 </div>
                 <div class="lg:col-start-2">
                   <img
-                    src="images/400.jpeg"
+                    src="images/400.webp"
                     alt="Person with the horizon in the night"
                     class="w-full h-full"
+                    loading="lazy"
                   />
                 </div>
                 <div class="lg:col-start-2">
                   <img
-                    src="images/2476.jpeg"
+                    src="images/2476_600.webp"
+                    srcset="images/2476_600.webp 600w, 
+                            images/2476_1440.webp 1440w"
                     alt="Woman with camera"
                     class="h-full"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -313,9 +330,10 @@
               <!-- Bottom image -->
               <div class="hidden md:block lg:row-start-3">
                 <img
-                  src="images/140.jpeg"
+                  src="images/140.webp"
                   alt="Motel sign"
                   class="w-full h-full"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -323,18 +341,29 @@
             <!-- Column 2 -->
             <div class="grid lg:col-start-2 gap-3">
               <div class="hidden md:block lg:row-start-1">
-                <img src="images/776.jpeg" alt="Volcano" class="w-full" />
+                <img
+                  src="images/776.webp"
+                  alt="Volcano"
+                  class="w-full"
+                  loading="lazy"
+                />
               </div>
               <div class="md:hidden lg:row-start-2 lg:block">
                 <img
-                  src="images/439.jpeg"
+                  src="images/439.webp"
                   alt="Plane crash"
                   class="w-full h-full"
+                  loading="lazy"
                 />
               </div>
               <div>
                 <div class="md:hidden">
-                  <img src="images/140.jpeg" alt="Motel sign" class="w-full" />
+                  <img
+                    src="images/140.webp"
+                    alt="Motel sign"
+                    class="w-full"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -343,13 +372,18 @@
             <div class="hidden md:grid gap-3 lg:hidden">
               <div>
                 <img
-                  src="images/800.jpeg"
+                  src="images/800.webp"
                   alt="Golden Gate Bridge"
                   class="w-full"
+                  loading="lazy"
                 />
               </div>
               <div class="lg:row-start-2">
-                <img src="images/439.jpeg" alt="Plane crash w-full" />
+                <img
+                  src="images/439.webp"
+                  alt="Plane crash w-full"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -363,34 +397,52 @@
         >
           <div>
             <img
-              src="images/logo-sample-01.jpg"
+              src="images/logo-sample-01.webp"
               alt="Advantage Consulting logo"
+              loading="lazy"
             />
           </div>
           <div>
             <img
-              src="images/logo-sample-02.jpg"
+              src="images/logo-sample-02.webp"
               alt="Company Name Tagline logo"
+              loading="lazy"
             />
           </div>
           <div>
-            <img src="images/logo-sample-03.png" alt="Sample Musics logo" />
+            <img
+              src="images/logo-sample-03.webp"
+              alt="Sample Musics logo"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src="images/logo-sample-04.jpg" alt="Parallon logo" />
+            <img
+              src="images/logo-sample-04.webp"
+              alt="Parallon logo"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src="images/logo-sample-05.jpg" alt="Company Name Tagline" />
+            <img
+              src="images/logo-sample-05.webp"
+              alt="Company Name Tagline"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src="images/logo-sample-06.png" alt="Sqquarespace logo" />
+            <img
+              src="images/logo-sample-06.webp"
+              alt="Sqquarespace logo"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
 
       <!-- eigth section : newsletter section -->
       <section
-        class="flex flex-col items-center w-full bg-[url('images/bg_newsletter.jpg')]"
+        class="flex flex-col items-center w-full bg-[url('images/bg_newsletter_1440.webp')] m:bg-[url('images/bg_newsletter.webp')]"
       >
         <div class="flex flex-col py-12 items-center bg-black/70">
           <div class="flex flex-col items-center 2xl:w-[80%] 2xl:items-start">
