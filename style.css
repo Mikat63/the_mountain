@@ -203,9 +203,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -217,9 +214,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
@@ -251,17 +245,11 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -305,10 +293,6 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -319,17 +303,11 @@
   .bg-\[\#f5f5f5\] {
     background-color: #f5f5f5;
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-black\/70 {
     background-color: color-mix(in srgb, #000 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
-  }
-  .bg-blue-300 {
-    background-color: var(--color-blue-300);
   }
   .bg-blue-300\/80 {
     background-color: color-mix(in srgb, oklch(80.9% 0.105 251.813) 80%, transparent);
@@ -349,44 +327,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'images\/\'\)\] {
-    background-image: url('images/');
-  }
-  .bg-\[url\(\'images\/bg\'\)\] {
-    background-image: url('images/bg');
-  }
-  .bg-\[url\(\'images\/bg_appareil_photo\.jpg\'\)\] {
-    background-image: url('images/bg_appareil_photo.jpg');
-  }
-  .bg-\[url\(\'images\/bg_header\.jpg\'\)\] {
-    background-image: url('images/bg_header.jpg');
-  }
-  .bg-\[url\(\'images\/bg_header\.webp\'\)\] {
-    background-image: url('images/bg_header.webp');
+  .bg-\[url\(\'images\/bg_appareil_photo_1440\.webp\'\)\] {
+    background-image: url('images/bg_appareil_photo_1440.webp');
   }
   .bg-\[url\(\'images\/bg_header_1440\.webp\'\)\] {
     background-image: url('images/bg_header_1440.webp');
   }
-  .bg-\[url\(\'images\/bg_newsletter\.jpg\'\)\] {
-    background-image: url('images/bg_newsletter.jpg');
-  }
-  .bg-\[url\(\'images\/bg_newsletter\.webp\'\)\] {
-    background-image: url('images/bg_newsletter.webp');
-  }
-  .bg-\[url\(\'images\/bg_newsletter_1140\.webp\'\)\] {
-    background-image: url('images/bg_newsletter_1140.webp');
-  }
   .bg-\[url\(\'images\/bg_newsletter_1440\.webp\'\)\] {
     background-image: url('images/bg_newsletter_1440.webp');
-  }
-  .bg-\[url\(\'images\/bg_nuage\.jpg\'\)\] {
-    background-image: url('images/bg_nuage.jpg');
-  }
-  .bg-\[url\(\'images\/bg_nuage\.webp\'\)\] {
-    background-image: url('images/bg_nuage.webp');
-  }
-  .bg-\[url\(\'images\/bg_nuage_1440\'\)\] {
-    background-image: url('images/bg_nuage_1440');
   }
   .bg-\[url\(\'images\/bg_nuage_1440\.webp\'\)\] {
     background-image: url('images/bg_nuage_1440.webp');
@@ -490,13 +438,6 @@
   }
   .text-cyan-400 {
     color: var(--color-cyan-400);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -655,6 +596,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .md\:bg-\[url\(\'images\/bg_appareil_photo\.webp\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('images/bg_appareil_photo.webp');
+    }
+  }
   .md\:bg-\[url\(\'images\/bg_header\.webp\'\)\] {
     @media (width >= 48rem) {
       background-image: url('images/bg_header.webp');
@@ -663,11 +609,6 @@
   .md\:bg-\[url\(\'images\/bg_nuage\.webp\'\)\] {
     @media (width >= 48rem) {
       background-image: url('images/bg_nuage.webp');
-    }
-  }
-  .md\:bg-\[url\(\'images\/bg_nuage_1440\.webp\'\)\] {
-    @media (width >= 48rem) {
-      background-image: url('images/bg_nuage_1440.webp');
     }
   }
   .lg\:col-start-1 {
@@ -933,11 +874,6 @@ p {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1016,7 +952,6 @@ p {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

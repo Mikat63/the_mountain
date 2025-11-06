@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head prefix="og: https://ogp.me/ns#">
+    <!-- general meta's -->
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Mountain King is a photographic journey around the world."
+    />
+
+    <!-- openGraph meta's -->
+    <meta property="og:title" content="Mountain King" />
+    <meta
+      property="og:description"
+      content="Mountain King is a photographic journey around the world."
+    />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="images/bg_header_1440.webp" />
+    <meta
+      property="og:image:alt"
+      content="Picture of a snow-covered mountain"
+    />
+    <meta property="og:locale" content="fr_FR" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font meta's -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Rokkitt:wght@400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Steelsheets meta's -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+    <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- enreiched microdonnées JSON6-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Mountain King",
+        "url": "#"
+      }
+    </script>
     <title>Moutain King - Home</title>
   </head>
   <body>
@@ -140,7 +179,7 @@
 
       <!-- third section : Ligulla Mattis Omare Ultricies -->
       <section
-        class="flex flex-col items-center bg-[url('images/bg_nuage_1440')] md:bg-[url('images/bg_nuage.webp')] bg-cover bg-center w-full"
+        class="flex flex-col items-center bg-[url('images/bg_nuage_1440.webp')] md:bg-[url('images/bg_nuage.webp')] bg-cover bg-center w-full"
       >
         <div class="flex flex-col items-center 2xl:w-[80%] 2xl:items-end">
           <div
@@ -237,7 +276,7 @@
 
       <!-- Fifth section  -->
       <section
-        class="flex flex-col items-center w-full bg-[url('images/bg_appareil_photo.jpg')] bg-cover bg-center"
+        class="flex flex-col items-center w-full bg-[url('images/bg_appareil_photo_1440.webp')] md:bg-[url('images/bg_appareil_photo.webp')] bg-cover bg-center"
       >
         <div class="flex flex-col items-center 2xl:w-[80%] 2xl:items-start">
           <div
@@ -318,8 +357,10 @@
                 <div class="lg:col-start-2">
                   <img
                     src="images/2476_600.webp"
-                    srcset="images/2476_600.webp 600w, 
-                            images/2476_1440.webp 1440w"
+                    srcset="
+                      images/2476_600.webp   600w,
+                      images/2476_1440.webp 1440w
+                    "
                     alt="Woman with camera"
                     class="h-full"
                     loading="lazy"
