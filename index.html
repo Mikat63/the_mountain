@@ -53,6 +53,9 @@
         "url": "#"
       }
     </script>
+
+    <!-- CSS AND JS -->
+    <script src="main.js" defer></script>
     <title>Moutain King - Home</title>
   </head>
   <body>
@@ -69,13 +72,40 @@
       </div>
       <button
         aria-label="open navigation menu"
-        class="cursor-pointer w-7 lg:w-10 2xl:w-12 focus:outline-none focus:bg-gray-500"
+        class="btn_menu cursor-pointer w-7 lg:w-10 2xl:w-12 focus:outline-none focus:bg-gray-500"
       >
-        <img src="images/menu_icon.svg" alt="open navigation menu" />
+        <img
+          class="icon_menu"
+          src="images/menu_icon.svg"
+          alt="open navigation menu"
+        />
+        <img
+          class="icon_menu hidden"
+          src="images/close-btn.png"
+          alt="open navigation menu"
+        />
       </button>
     </header>
 
     <main>
+      <nav
+        class="menu transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-500 w-[50%] text-[16px] text-white fixed top-0 left-0 bottom-0 flex flex-col z-20 sm:w-[25%] lg:w-[15%]"
+      >
+        <div class="p-2 pr-5">
+          <ul class="list-none flex flex-col gap-3 divide-y divide-white">
+            <li class="hover:text-gray-300"><a href="#">Home</a></li>
+            <li class="hover:text-gray-300"><a href="#">Features</a></li>
+            <li class="hover:text-gray-300"><a href="#">About me</a></li>
+            <li class="hover:text-gray-300"><a href="#">My blog</a></li>
+            <li class="hover:text-gray-300"><a href="#">My history</a></li>
+            <li class="hover:text-gray-300"><a href="#">Look my photos </a></li>
+            <li class="hover:text-gray-300"><a href="#">Get in touch!</a></li>
+            <li class="hover:text-gray-300"><a href="#">Download</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+
       <!-- first section : Baneer Hero-->
       <section
         class="flex flex-col h-[100vh] items-center justify-center bg-[url('images/bg_header_1440.webp')] md:bg-[url('images/bg_header.webp')] bg-cover"
@@ -480,7 +510,7 @@
         </div>
       </section>
 
-      <!-- eigth section : newsletter section --> 
+      <!-- eigth section : newsletter section -->
       <section
         class="flex flex-col items-center w-full bg-[url('images/bg_newsletter_1440.webp')] m:bg-[url('images/bg_newsletter.webp')]"
       >
