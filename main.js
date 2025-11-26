@@ -9,3 +9,4 @@ btnMenu.addEventListener("click", function () {
     icon.classList.toggle("hidden");
   });
 });
+    
